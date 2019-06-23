@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Required meta tags -->
+   	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    	<!-- Google Font -->
+    	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+    	<!-- Custom CSS -->
+    	<link type="text/css" rel="stylesheet" href="../static/about.css">
+
+    	<title>About Us</title>
+  </head>
+  <body>
+	<nav id="mainNavbar" class="navbar navbar-expand-md sticky-top navbar-dark">
+		<div class="container">
+	  		<a class="navbar-brand candy" href="index">BRO</a>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto align-items-end">
+								<li class="nav-item active borderright">
+									<a class="nav-link" href="./about">ABOUT US<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item ml-3 borderright">
+									<a class="nav-link" href="./login">{{ username }}</a>
+								</li>
+								<li class="nav-item ml-3">
+									{{ cmd | safe }}
+								</li>
+						</ul>
+				</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<img class="img-fluid batteries2" alt="" src="../static/image/batteries2.jpg">
+			</div>	
+			<div class="col-lg-6">
+				<div class="text-center d-none d-lg-block">
+				<h1 class="this text-white mb-0">BRO (Batteries Recycling Organization)</h1>
+				<p class="text-white mb-0">Ever wondered where to dispose off used batteries? If not, have you ever searched for organizations that have safe battery recycling programs, but your search was fruitless? Not anymore. BRO(Batteries Recycling Organization) is a revolutionary application that lets people looking to responsibly and safely dispose off used batteries easily find organizations that run successful battery disposal programs.</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<div class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="text-center d-none d-lg-block">
+				<h1 class="this text-white mb-0">Dhruvasu Bhatia</h1>
+				<p class="text-white mb-0">Email: dhruvasu1@gmail.com</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img class="img-fluid" alt="" src="../static/image/Dhruv.jpg">
+			</div>			
+		</div>
+	</div>
+
+	<div class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<img class="img-fluid" alt="" src="../static/image/Jacky.jpg">
+			</div>	
+			<div class="col-lg-6">
+				<div class="text-center d-none d-lg-block">
+				<h1 class="this text-white mb-0">Jacky Zhuang</h1>
+				<p class="text-white mb-0">Email: jacky.zhuang123@hotmail.com</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<div class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="text-center d-none d-lg-block">
+				<h1 class="this text-white mb-0">Elton Kok</h1>
+				<p class="text-white mb-0">Email: elton.kok@mail.utoronto.ca</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img class="img-fluid" alt="" src="../static/image/Elton.jpg">
+			</div>			
+		</div>
+	</div>
+
+	<div class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<img class="img-fluid" alt="" src="../static/image/Anthony.jpg">
+			</div>	
+			<div class="col-lg-6">
+				<div class="text-center d-none d-lg-block">
+				<h1 class="this text-white mb-0">Anthony Inthavong</h1>
+				<p class="text-white mb-0">Email: anthony.inthavong@mail.utoronto.ca</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    	</script>
+
+	<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+			{% include 'footer.html' %}
+	
+		</body>
+</html>

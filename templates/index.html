@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	{{sndmap.js}}
+    <script>
+        mylist =  {{ coords | tojson }}
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md sticky-top navbar-dark">
+		<div class="container">
+	  		<a class="navbar-brand candy" href="index">BRO</a>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="navbar-nav ml-auto align-items-end">
+	      			<li class="nav-item borderright">
+	        			<a class="nav-link" href="./about">ABOUT US<span class="sr-only">(current)</span></a>
+	      			</li>
+	      			<li class="nav-item ml-3 borderright">
+	        			<a class="nav-link" href="./login">{{ username }}</a>
+	      			</li>
+	      			<li class="nav-item ml-3">
+						{{ cmd | safe }}
+	      			</li>
+	    		</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="text-center">
+	<div class="jumbotron jumbotron-fluid">
+  		<div class="container imgmargin text-center">
+  			<div class="text-align-center"> <img src="../static/image/logo.png"> </div>
+  		</div>
+	</div>
+    </div>
+    <h1 class="lead-text">View Places to Dispose Batteries Near You</h1>
+	<a href="path"><button class="btn btn-lg btn-success">directions to the nearest battery disposal <i class="fas fa-external-link-alt"></i></button></a>
+	{{sndmap.html}}
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="/static/login.css" type="text/css">
+{% block body %}
+<div id="logo"><img src="./static/image/logo.png" postion="relative" top="150px"></div>
+
+<div id="particles-js"></div>
+<script type="text/javascript" src="../static/particles.js"></script>
+<script type="text/javascript" src="../static/app.js"></script>
+
+
+<form action="/signup" method="POST">
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+<h1>Sign Up</h1>
+</div>
+<div class="login-form">
+
+	<!-- user -->
+	<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="username" name="username" required>
+		<label class="login-field-icon fui-user" for="login-name"></label>
+	</div>
+
+	<!-- password -->
+	<div class="control-group">
+		<input type="password" class="login-field" id="password" value="" placeholder="password" name="password" required>
+	</div>
+
+	<!-- confirm password -->
+	<div class="control-group">
+		<input type="password" class="login-field" id="confirm_password" value="" placeholder="confirm password" name="cpassword" required> 
+	</div>
+
+	<!-- company name -->
+	<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="Company Name" name="company_name" required>
+		<label class="login-field-icon fui-user" for="company-name"></label>
+	</div>
+
+	<!-- address -->
+	<div class="control-group">
+			<input type="text" class="login-field" value="" placeholder="Address" name="address" required>
+			<label class="login-field-icon fui-user" for="address"></label>
+		</div>
+
+	<!-- latitude -->
+	<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="Latitude" name="latitude" required>
+		<label class="login-field-icon fui-user" for="latitude"></label>
+	</div>
+
+	<!-- longitude -->
+	<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="Longitude" name="longitude" required>
+		<label class="login-field-icon fui-user" for="longitude"></label>
+	</div>
+
+	<!-- postal code -->
+	<div class="control-group">
+		<input type="full_name" class="login-field" value="" placeholder="Postal Code" name="postal_code" required>
+		<label class="login-field-icon fui-user" for="postal-code"></label>
+	</div>
+		
+			
+				
+<input type="submit" id="login-btn" value="Create Account" class="btn btn-primary btn-large btn-block">
+<!-- put this into exteral js after  
+this is to make sure the account can only be created if the password == comfirm password
+-->
+<!-- <script>
+
+	document.addEventListener("DOMContentLoaded", function () {
+		document.getElementById("confirm_password").addEventListener("keyup", function() {
+			
+			if (document.getElementById("password").value == this.value) {
+				document.getElementById('confirm_password').style.borderColor = null;
+				document.getElementById('login-btn').removeAttribute("disabled");
+				document.getElementById('login-btn').style.backgroundColor = null;
+
+			} else {
+				document.getElementById('login-btn').setAttribute("disabled", "disabled");
+				document.getElementById('login-btn').style.backgroundColor = 'grey'
+				document.getElementById('confirm_password').style.borderColor = 'red';
+
+
+			}
+		})
+
+	})
+
+</script> -->
+<script src="../static/signup.js"></script>
+
+
+</div>
+</div>
+</div>
+</form>
+{% endblock %}
+
+

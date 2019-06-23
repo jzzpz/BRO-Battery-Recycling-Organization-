@@ -1,0 +1,56 @@
+body {	
+	background-image: url("../static/image/batteries.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+.navbar {
+	font-family: "Lobster";
+	background-color: #0e773e;
+	height: 40px;
+}
+
+.navbar .navbar-brand {
+	font-family: "Lobster";
+	font-size: 2.0rem;
+}
+
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+}
+
+.borderright {
+	border-right-style: solid;
+	padding-right: 10px;
+}
+
+.this {
+	margin-top: 10%;
+}
+
+.batteries2 {
+	width: 800px;
+	margin-top: 170px;
+	margin-bottom: 200px;
+	height: 350px;
+}
+
+#main-footer {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	height: 100px;
+    margin-top: 50px;
+	line-height: 4px;
+	text-align: center;
+	min-height: 80px;
+	color: black;
+	background-color: #349b80;
+}
+
+.foot-content {
+	margin-top: 20px;
+}
