@@ -6,7 +6,6 @@ import re, requests
 import json
 import geocoder
 import time
-#from globals import AccountTypes
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test.db"
